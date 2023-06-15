@@ -1,0 +1,27 @@
+*, ::after, ::before {
+    box-sizing: border-box; /* Border box helps make responsive layouts more manageable */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif; /* Makes the global font Roboto */
+}
+
+.notification-bar {
+    background-color: #1CD1B0; /* Blue green background color */
+    padding-inline: 2rem; /* sets both start and end padding */
+    font-size: 1rem;  /* Makes fonts size equal to 1 root or 16px */
+    padding-block: 0.5rem; /* sets both start and end values of 0.5 rem */
+}
+
+header h1 {
+    background-color: #00669F;  /* Blue background color */
+    font-size: 40px;  /* Makes title font size 40px */
+    padding: 2rem; /* Gives padding of 2 rem in all directions */
+
+header .navbar {
+    list-style-type: none;  /* No item marker is shown. */
+    display: flex;  /* defines a flex container */
+    flex-direction: column;
+}

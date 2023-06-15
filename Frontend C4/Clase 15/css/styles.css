@@ -8,6 +8,7 @@ body {
     font-family: "Roboto", sans-serif; /* Makes the global font Roboto */
 }
 
+/* Notification Bar */
 .notification-bar {
     background-color: #1CD1B0; /* Blue green background color */
     padding-inline: 2rem; /* sets both start and end padding */
@@ -15,13 +16,49 @@ body {
     padding-block: 0.5rem; /* sets both start and end values of 0.5 rem */
 }
 
+/* Navigation menu */
 header h1 {
     background-color: #00669F;  /* Blue background color */
     font-size: 40px;  /* Makes title font size 40px */
     padding: 2rem; /* Gives padding of 2 rem in all directions */
+}
 
 header .navbar {
+    background-color: #001D2D;
     list-style-type: none;  /* No item marker is shown. */
     display: flex;  /* defines a flex container */
-    flex-direction: column;
+    justify-content: end; /* items are packed toward the end of the flex-direction */
+    padding: 1rem;
+}
+
+header .navbar a {
+    color: white;  /* Gives text color white */
+    margin: 1rem;  /* Gives margin 1 root */
+    text-decoration: none;  /* Removes underline from words */
+}
+
+/* Card section */
+main {
+    display: flex;  /* defines a flex container */
+    justify-content: space-around;
+    align-items: center;
+}
+
+main .card {
+    display: flex;  /* defines a flex container */
+    flex-direction: column;  /* Makes the stacked direction vertical */
+    position: relative;
+    border-radius: 1rem;  /* Rounds the corners by 1 rem */
+}
+
+main .card_heart {
+    position: absolute;  /* Gives an absolute position */
+    top: 1rem; /* Absolutely positioned 1 rem from the top */
+    left: 1rem;  /* Absolutely positioned 1 rem from the left */
+}
+
+main .card div {
+    background-color: #F3F3F3; /* Gives light gray backround */
+    position: relative;
+    width: 300px;
 }

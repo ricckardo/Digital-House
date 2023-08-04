@@ -39,6 +39,7 @@ header .navbar a {
 
 /* Card section */
 main {
+    padding-top: 176px;  /* Gives a top padding of 176px */
     display: flex;  /* defines a flex container */
     justify-content: space-around;
     align-items: center;
@@ -60,5 +61,22 @@ main .card_heart {
 main .card div {
     background-color: #F3F3F3; /* Gives light gray backround */
     position: relative;
-    width: 300px;
+    width: 300px;  /* Gives the card a width of 300px */
+    display: flex;  /* defines a flex container */
+    flex-direction: column;  /* Makes the stacked direction vertical */
+    padding: 1rem;
+    align-items: center;
+}
+
+main .card div h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    margin-top: 4rem;
+}
+
+main .card div .card_icon {
+    position: absolute;
+    top: -60px;
+    /* left: calc(50% - 60px); */
 }

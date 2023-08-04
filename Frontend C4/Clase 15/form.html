@@ -3,53 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css" />
-    <title>Registration form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Shantell+Sans:ital,wght@0,400;1,300&family=Sono&display=swap" rel="stylesheet">
+    <title>Tienda</title>
 </head>
 <body>
-    <h1>Añadí tu Super</h1>
-    <p>Agregá tu personaje favorito completando las opciones.</p>
-    <form>
-        <label for="nombre">*Nombre</label>
-        <input type="text" id="nombre" minlength="2" >
-        <label for="especie">Especie</label>
-        <select id="referrer" name="referrer">
-            <option value="">(seleccionar uno)</option>
-            <option value="1">Humano</option>
-            <option value="2">Kryptoniano</option>
-            <option value="3">Vulcano</option>
-            <option value="4">Otro</option>
-        </select>
-        <br>
-        <label for="date">Fecha</label>
-        <input type="date" id="date">
-        <label for="foto">Agregar foto</label>
-        <input type="file" id="foto" accept=".jpg, .pdf, .png" name="foto" multiple>
-        <br>
-        <textarea id="descripcion" name="w3review" rows="4" cols="40">
-            Descripción.
-        </textarea>
-        <legend>Poderes</legend>
-
-        <div>
-            <input type="checkbox" id="volar" name="volar" checked>
-            <label for="scales">Volar</label>
-        </div>
-        <div>
-            <input type="checkbox" id="superinteligencia" name="superinteligencia">
-            <label for="horns">SuperInteligencia</label>
-        </div>
-        <div>
-            <input type="checkbox" id="rayo" name="rayo">
-            <label for="horns">Vista de rayo láser</label>
-        </div>
-        <div>
-            <input type="checkbox" id="billetera" name="billetera">
-            <label for="horns">Billetera Gorda</label>
-        </div>
-        <hr>
-        
-    </form>
-    
+    <header>
+        <h2>Descuentos 20%</h2>
+        <h1>Heroes</h1>
+        <ul class="navbar">
+            <li><a href="#">Contacto</a></li>
+            <li><a href="./registro.html">Registrarme</a></li>
+            <li><a href="./index.html">Ingresar</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="form">
+            <h2>Añadí tu super!</h2>
+            <p>Agrega tu personaje favorito completando las opciones</p>
+            <form class="form__entry">
+                <div class="form__entry__field">
+                    <label for="names">*Nombre</label>
+                    <input type="text" id="names" name="names">
+                </div>
+                <div class="form__entry__field">
+                    <label for="especie">*Especie</label>
+                    <select name="especie" id="especie">
+                        <option selected value="">Metahumano</option>
+                        <option value="">Humano</option>
+                        <option value="">Alienígena</option>
+                    </select>
+                </div>
+                <div class="form__entry__field">
+                    <label for="dates">Fecha</label>
+                    <input type="date" id="dates">
+                </div>
+                <div class="form__entry__field">
+                    <label for="photo">Agregar foto</label>
+                    <input type="file" id="photo" name="photo">
+                    
+                </div>
+                <div class="form__entry__field">
+                    <textarea  placeholder="Descripcion" cols="5" rows="15"></textarea>
+                </div>
+                <div class="form__entry__field">
+                    <h3>PODERES</h3>
+                    <div class="form__entry__field__options">
+                        <input type="checkbox" id="optionA">
+                        <label for="optionA">Volar</label>
+                    </div>
+                    <div class="form__entry__field__options">
+                        <input type="checkbox" id="optionB">
+                        <label for="optionB">Superinteligencia</label>
+                    </div>
+                    <div class="form__entry__field__options">
+                        <input type="checkbox" id="optionC">
+                        <label for="optionC">Vista de rasho laser</label>
+                    </div>
+                    <div class="form__entry__field__options">
+                        <input type="checkbox" id="optionD">
+                        <label for="optionD">Billetera gorda</label>
+                    </div>
+                    <hr>
+                    <h3>TIPO DE PERSONAJE</h3>
+                    <div class="form__entry__field__options">
+                        <input type="radio" id="villano" name="tipos">
+                        <label for="villano">Villano/Villana</label>
+                    </div>
+                    <div class="form__entry__field__options">
+                        <input type="radio" id="heroe" name="tipos">
+                        <label for="heroe">Héroe/Heroína</label>
+                    </div>
+                </div>
+                <div class="form__entry__btn">
+                    <button>Añadir</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados a FRONT END 1</p>
+    </footer>
 </body>
 </html>
